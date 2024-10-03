@@ -38,8 +38,8 @@ body {
 
 .c-logo {
   height: 7.67vh;
-  padding: 12px;
-  padding: 0.5vh 1.89vh 0.44vh 0.89vh;
+  /* padding: 12px; */
+  padding: 0.5vh 1.89vh 0.44vh 1.89vh;
   border-radius: 0.89vh 0 0 0;
 }
 
