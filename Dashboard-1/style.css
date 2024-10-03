@@ -1,16 +1,16 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: #F3F5F9;
+  height: 100vh;
 }
 
-/* Header Section */
+
+/* ---------------------------Header section------------------------------------- */
 .header {
   display: flex;
   justify-content: space-between;
   max-height: 9.36vh; 
   padding-top: 21px; 
-  /* padding-right: 2.67vh; 
-  padding-left: 0.8vh;  */
   padding-right: 21.36px;
   padding-left: 6.4px;
   margin: 8px;
@@ -25,21 +25,18 @@ body {
 
 .v-logo {
   height: 8.5vh;
-  padding: 0.44vh 0.89vh 0.44vh 0.89vh;
-  gap: 0.89vh; 
-  border-radius: 0.89vh 0 0 0; 
+  padding: 3.52px 7.12px 3.52px 7.12px;
+  gap: 7.12px;
+  border-radius: 7.12px 0 0 0; 
 }
 
 .c-logo-bg {
   margin-top: 2px;
   background-color: white;
-  height: 8.5vh;
-  width: 15vh;
   border-radius: 12px;
 }
 
 .c-logo {
-  /* width: 6.68vw; */
   height: 7.67vh;
   padding: 12px;
   padding: 0.5vh 1.89vh 0.44vh 0.89vh;
@@ -47,26 +44,24 @@ body {
 }
 
 .user-logo {
-  /* margin-right: -34px; */
-  /* width: 15vh; */
   height: 13vh;
   border-radius: 99px 0 0 0;
-  /* padding-bottom: 12px; */
-  /* object-fit: cover; */
 }
 
-/* Main Body */
+/*----------------------------Main Body--------------------------------------- */
 section {
-  /* height: 100%; */
-  
-  margin: 24px 10px 0 25px;
+  margin: 24px 10px 0px 25px;
   gap: 30px;
   display: flex;
 }
 
+
+/* ---------- Section 1 ----------- */
+
 .section1 {
   width: 76%;
   row-gap: 12px;
+  
 }
 
 .part1 {
@@ -77,11 +72,13 @@ section {
   height: auto;
   gap: 1.11vh; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+
+
 }
 
 .part1_user {
   align-items: center;
-  gap: 0.89vh; 
+  gap: 6px; 
   padding: 0.5px 0 0 8px;
   display: flex;
 }
@@ -94,18 +91,16 @@ section {
 
 .part1_user > p {
   font-weight: bold;
-  /* width: 2.56vw; 
-  height: 1.67vh; */
   color: #339933;
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  line-height: 1.67vh; 
+  font-weight: 700; 
   text-align: left;
 }
 
 .part1 > p {
   font-size: larger;
-  font-weight: 700;
+  padding-bottom: 9px;  
+  font-weight: bold;
   margin-left: 10px;
 }
 
@@ -127,8 +122,20 @@ section {
 }
 
 .pdf_user > p {
-  padding: 10px;
+  padding: 0 10px 10px 10px;
 }
+
+
+@media (max-width: 768px) {
+   .part1>p{
+      font-weight: 600;
+  }
+  
+  .pdf_user {
+      width: 33vw;
+  }
+}
+
 
 .part2 {
   display: flex;
@@ -141,6 +148,8 @@ section {
   gap: 1.11vh; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
+
+
 
 .logo-container {
   display: flex;
@@ -189,6 +198,8 @@ section {
   padding: 7px;
 }
 
+
+
 .part3 {
   background-color: white;
   margin-bottom: 18px;
@@ -206,45 +217,6 @@ section {
 
 }
 
-/* .part4 {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  height: 4%;
-  border-radius: 1.5vh;
-  gap: 1.11vh; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-  border: 1px solid rgba(73, 114, 34, 0.3); 
-  align-items: center;
-  margin-bottom: 18px;
-} */
-
- /* .part4 > button{
- 
- 
-}  */
-
-/* .part4 > img{
-
-  border: none;
-  padding: 0.84vh 0.67vh 0.84vh 0.67vh; 
-  border-radius: 0.22vh 0 0 0; 
-  width: 3.56vh; 
-  height: 4vh; 
-} */
-
-/* .part4 > input {
-  
-  width: 99.9%; 
-  border: none; 
-  outline: none; 
-  margin-left: 10px;
- 
-  font-size: 16px; 
- 
-} */
-
-
 
 
 .part4 {
@@ -259,6 +231,7 @@ section {
   border: 1px solid rgba(73, 114, 34, 0.3);
   align-items: center;
   margin-bottom: 18px;
+ 
 }
 
 .part4 > input {
@@ -266,13 +239,14 @@ section {
   border: none; 
   outline: none; 
   margin-left: 10px;
-  font-size: 16px; 
+  font-size: 16px;
+  padding: 21px; 
 }
 
 .part4 > button {
   background-color: transparent;
   border: none;
-  padding: 0.84vh 0.67vh 0.84vh 0.67vh; 
+  padding: 6.72px 5.36px 6.72px 5.36px;
   cursor: pointer;
 }
 
@@ -288,36 +262,64 @@ section {
 
 
 
+
+/*--------- Section 2 ----------- */
 .section2 {
-  margin: 0 1% 0.9% 0;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   background-color: white;
   width: 24%;
-  height: 100%;
-  border-radius: 1.5vh;
+  border-radius: 12px;
+  height: 80vh;
+  position: fixed;
+  right: 0;
+ 
+  
+  
+ 
 }
+
 
 .s2-pdf {
   display: flex;
-  gap: 12px;
+  align-items: center; 
+  padding: 12px;
+  gap: 6px;
+ 
 }
+
+.s2-pdf img {
+  height: 2.8vh;
+}
+
+.s2-pdf p{
+  font-weight: 700;
+  font-size: larger;
+}
+
 
 .pdfView {
-  width: 111%;
-  height: 59vh;
-  margin-left: -22px;
+  width: auto;  
+  height: auto;  
+  margin: 12px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; 
 }
 
-.s2-pdf > p {
-  font-family: 'Inter', sans-serif;
-  font-size: larger;
-  font-weight: 700;
-  line-height: 2.67vh;
-  text-align: left;
-}
 
-.s2-pdf > img {
-  height: 3vh;
-  margin-top: 21px;
-  margin-left: 12px;
-}
+/* @media (max-width: 768px) {
+  .pdfView {
+      width: auto;  
+      height: auto;    
+  }
+
+  .s2-pdf p {
+      font-weight: 400; 
+  }
+  .s2-pdf img {
+    height: auto;
+    width: 3vw;
+  }
+} */
