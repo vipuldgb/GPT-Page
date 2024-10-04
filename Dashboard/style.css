@@ -194,11 +194,11 @@ section {
   margin-bottom: 4px;
 }
 
-.thumb-container > img {
-  /* width: 2.67vw;  */
+/* .thumb > img {
+ 
   height: 2.67vh; 
-  padding: 7px;
-}
+  padding: 5px;
+} */
 
 
 
@@ -212,7 +212,7 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.normal-like {
+.normal-dislike {
   transform: rotate(180deg);
   /* transform: rotate(360deg); */
   transform: scaleY(-1);
@@ -274,11 +274,9 @@ section {
   width: 26%;
   border-radius: 12px;
   height: 80vh;
-  /* position: fixed;
-  right: 20;  */
-  position: -webkit-sticky; /* For Safari */
+  position: -webkit-sticky; 
   position: sticky;
-  top: 0; /* Sticks when section2 reaches the top */
+  top: 0; 
  
  
 }
@@ -312,17 +310,40 @@ section {
 }
 
 
-/* @media (max-width: 768px) {
-  .pdfView {
-      width: auto;  
-      height: auto;    
-  }
 
-  .s2-pdf p {
-      font-weight: 400; 
-  }
-  .s2-pdf img {
-    height: auto;
-    width: 3vw;
-  }
-} */
+
+/* Adding Button to each element and making button Functional */
+
+
+.btn{
+  border: none;
+  background-color: white;
+}
+
+.material-symbols-outlined {
+  font-size: 48px; 
+  padding: 10px;  
+  display: inline-block; 
+  transition: background-color 0.3s ease; 
+  border-radius: 50%; 
+}
+
+.thumb-container {
+  margin-top: 20px;
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px; /* Size of the icon */
+  border-radius: 50%;
+}
+.liked {
+  background-color:green;
+  color: white; 
+}
+.disliked {
+  background-color: red;
+  color: white; 
+}
